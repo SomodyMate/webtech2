@@ -1,0 +1,42 @@
+<html>
+<body>
+
+  <mat-panel-title class="mat-title"> Actions </mat-panel-title>
+
+  <p></p>
+
+    <button mat-raised-button routerLinkActive="active" routerLink="/list" class="actbtn" >List</button>
+    <button mat-raised-button routerLinkActive="active" (click)=logout() class="actbtn" >Log out</button>
+
+  <p></p>
+
+  <mat-panel-title class="mat-title"> Add new athlete </mat-panel-title>
+
+    <form [formGroup]="createForm" (ngSubmit)="onSubmit()" class="form" >
+      <mat-form-field >
+        <input matInput type="text" placeholder="Name" formControlName="name">
+      </mat-form-field>
+      <br>
+
+      <mat-form-field >
+        <input matInput  placeholder="Gender" type="text"  formControlName="position">
+      </mat-form-field>
+      <br>
+
+      <mat-form-field >
+        <input matInput  placeholder="Level of play" type="text"  formControlName="office">
+      </mat-form-field>
+      <br>
+
+      <mat-form-field >
+        <input matInput  placeholder="Age" type="text" formControlName="salary">
+      </mat-form-field>
+      <br>
+
+      <button mat-raised-button type="submit"  class="btn" >Add</button>
+
+    </form>
+
+
+</body>
+</html>

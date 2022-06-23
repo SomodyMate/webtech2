@@ -1,0 +1,28 @@
+<html>
+<body>
+
+<mat-panel-title class="mat-title"> Registration </mat-panel-title>
+
+<form [formGroup]="createForm" (ngSubmit)="onSubmit()" class="form">
+
+  <mat-form-field >
+    <input matInput type="text" placeholder="Username" formControlName="uname">
+  </mat-form-field>
+
+  <br>
+
+  <mat-form-field >
+    <input matInput type="password" placeholder="Password" formControlName="password">
+  </mat-form-field>
+
+  <p></p>
+
+  <button  mat-raised-button type="submit" class="btn">Registration</button>
+  <p></p>
+  <button mat-raised-button routerLinkActive="active" class="btn" routerLink="/login">Log-in</button>
+
+</form>
+
+</body>
+</html>
+

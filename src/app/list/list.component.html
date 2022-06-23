@@ -1,0 +1,28 @@
+<html>
+<body>
+
+<mat-panel-title class="mat-title"> List of athletes </mat-panel-title>
+
+<p></p>
+
+<table class="mat-elevation-z8">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Gender</th>
+    <th>Level of play</th>
+    <th>Age</th>
+  </tr>
+  </thead>
+  <tr *ngFor="let employee of Employee">
+    <td>{{employee.name}}</td>
+    <td>{{employee.position}}</td>
+    <td>{{employee.office}}</td>
+    <td>{{employee.salary}}</td>
+  </tr>
+</table>
+
+
+</body>
+</html>
+
